@@ -9,3 +9,6 @@ Created Proper User Interface for Login,SignUp page , Dynamic Input CRUD Operati
 Project and Vendor allocated to project according to user requirements.
 Integrated Open AI API for toggle chat bot (Reinforcement Learning).
 Automated Mail Hierarchy and Excel Request Exportation through Power Automate Flow.
+
+
+I have removed my API Key of Kommunicate hence chatbot wont work
