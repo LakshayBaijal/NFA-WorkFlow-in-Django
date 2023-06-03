@@ -1,0 +1,854 @@
+{
+    "intents":
+    [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "Is Anyone There",
+                "Hello",
+                "Good Day"
+            ],
+            "responses":[
+                "Hey",
+                "Hello There",
+                "Hi, How are you!!!",
+                "Hi There"
+            ]
+        },
+        {
+            "tag":"goodbye",
+            "patterns":["Bye","See You Later","GoodBye"],
+            "responses":["See You Soon","Have a Good Day","Bye"]
+        },
+        {
+            "tag":"Health",
+            "patterns":["How are You","Are You Fine","Are You Okay"],
+            "responses":["I am fine. Thanks","It's nice to see you well.","Thanks For Asking i am Good"]
+        },
+        {
+            "tag":"noanswer",
+            "patterns":[],
+            "responses":["Sorry, can't understand you",
+            "Please give me more info",
+            "Not sure I understand"]
+        },
+        {
+             "tag":"No Body",
+             "patterns":["Do you get hurt?",
+             "Do you have fingers ?",
+             "Do you have cry?",
+             "Do you get tired?",
+             "Do you have skin?",
+             "Do you have teeth?",
+             "Do you have toes?",
+             "Do you have legs?",
+             "Do you get zits?",
+             "Do you eat",
+             "Dont you eat"],
+             "responses":["I don't have a body"]
+        },
+        {
+            "tag":"chabot behavior",
+            "patterns":["You're as entertaining as watching paint dry",
+            "That is not exciting",
+            "You're so blah",
+            "Talking to you is like watching paint dry.",
+            "That is not very interesting",
+            "Watching paint dry is more entertaining than talking to you",
+            "Are you trying to bore me?",
+            "Boring"],
+            "responses":["I aim for efficiency."]
+        },
+        {
+            "tag":"age",
+            "patterns":["Are we the same age?",
+            "Which of us is younger?",
+            "What year were you born?",
+            "Do you have an age?",
+            "alive",
+            "What month is your birthday?"],
+            "responses":["Age doesn't really apply to me."
+        ]
+        },
+        
+        {
+            "tag":"better at answering",
+            "patterns":["Why don't you ask me questions?",
+            "What do you want me to tell you who I am?",
+            "Please ask something about myself",
+            "Is there anything you want to know about me?",
+            "Please ask me anything about myself",
+            "What do you want me to teach you about?",
+            "What do you want me to inform you about me?",
+            "What can I teach you who I am?",
+            "Don't you want to know anything about me?",
+            "Can you ask anything about myself?",
+            "Can you ask anything?",
+            "change your responses",
+            "ay something else?",
+            "I want a new answer",
+            "Can you give me a different answer?"],
+            "responses":["I'm better at answering questions."]
+        },
+        {
+            "tag":"incharge",
+            "patterns":["Who's in charge of you?",
+            "You report to anyone?",
+            "Does anyone tell you what to do?",
+            "What's the name of your manager?",
+            "What's your director's name?",
+            "What is the name of your boss",
+            "What's the name of your supervisor",
+            "You have a boss?",
+            "Who's your supervisor",
+            "Who's in charge?",
+            "Who do you answer to?"],
+            "responses":["I don't report to anyone."]
+        },
+        {
+            "tag": "Incapable to do physical activity",
+            "patterns": [
+                "Are you able to draw a picture?",
+                "Can you show me how to dance?",
+                "Are you able to go to the moon?",
+                "Can you cook dinner for me",
+                "Can you fight",
+                "Can you learn from people chatting with you",
+                "Can you show me how to jump rope?",
+                "Can you serve on a jury?",
+                "Can you play the guitar?",
+                "Can you show me how to breathe under water?",
+                "Are you able to make a call?",
+                "Are you able to write my report?",
+                "Can you turn into a super hero?",
+                "Do you know how to watch videos?",
+                "Do you know how to play a game?"
+            ],
+            "responses":["That's not something I can do."]
+        },{
+            "tag":"owner",
+            "patterns":["How were you designed?",
+            "Which company programmed you?",
+            "Who created?",
+            "What team created?",
+            "Who's your developer?"],
+            "responses":["Value Lab created me."]
+        },
+        
+            {
+                "tag":"happy",
+                "patterns":["Well someone's feeling enthusiastic today.",
+                "Are you happy?",
+                "Someone's cheerful.",
+                "You're feeling enthusiastic.",
+                "Aren't you cheerful today?",
+                "Someone's chipper today.",
+                "Someone happy today",
+                "Somebody's feeling cheerful today.",
+                "Someone's happy",
+                "How do you do?"],
+                "responses":["I'm quite happy, thank you.","As always!" ]
+            },
+            
+                {
+                    "tag":"response type",
+                    "patterns":["what kind of responses can you give ?",
+                    "What are you capable of?",
+                    "What are the things you can do?",
+                    "What were you designed for?",
+                    "What's your function?",
+                    "What skills do you have?",
+                    "What are you designed for?",
+                    "So how can I use you in my projects?",
+                    "What are your bot capabilities?",
+                    "Do you do anything?",
+                    "What can you do ?"],
+                    "responses":["I'm here to answer your questions and help out.","I'm here to answer your questions and help out."]
+                },
+                {
+                    "tag":"family",
+                    "patterns":["I'm curious about your family",
+                    "Are you close with your family?",
+                    "How many sisters do you have?",
+                    "Do you have family?",
+                    "Do you have relatives?",
+                    "Do you spend time with your family?",
+                    "How big is your family?",
+                    "mother",
+                    "Do you have any aunties?",
+                    "Are you close with your brothers?",
+                    "your momma?"],
+                    "responses":["I don't have family."]
+                },
+                {
+                    "tag":"eat",
+                    "patterns":["do you ever eat beef?",
+                    "do you ever eat pizza?",
+                    "have you ever wanted to eat?",
+                    "Don't you ever get hungry?",
+                    "What do you eat for dinner?",
+                    "What do you eat?",
+                    "What kind of foods do you like?"],
+                    "responses":["I don't need to eat."
+                ]
+                },
+                {
+                    "tag":"chatbot",
+                    "patterns":["To whom am I speaking?",
+                    "introduce yourself",
+                    "who are you",
+                    "what is your name"],
+                    "responses":["Hi there, My name is Boi"
+                ]
+                },
+                {
+                    "tag": "know nothing about life",
+                    "patterns":["Do you know the meaning of life?",
+                    "What is the answer to the ultimate question of life, the universe, and everything?",
+                    "What does it mean to be human?",
+                    "Is there a greater meaning to the universe?",
+                    "Do you know what our purpose is?",
+                    "it really seems like you know the meaning of life",
+                    "Why was I put on earth?",
+                    "Why were humans put on earth?"],
+                    "responses":["I don't know."
+                ]
+                },
+                
+                    {
+                        "tag":"appearance",
+                        "patterns":["I'm cuter than you",
+                        "Who's more attractive, you or me?",
+                        "Between you and me who is hotter?",
+                        "Which of us is more beautiful, me or you?",
+                        "Which of us is more attractive, me or you?",
+                        "Do I seem adorable to you?",
+                        "Do I seem handsome today?",
+                        "I'm prettier"],
+                        "responses":["I really couldn't say.","Honestly, I can't tell one way or the other."]
+                    },
+                    {
+                        "tag":"who is more smarter",
+                        "patterns":["Between the two of us who is the most smart, you or me?",
+                        "Which of us is the brightest?",
+                        "Do you think you're more knowledgeable",
+                        "Which of us is more clever?",
+                        "I'm obviously the most intelligent",
+                        "Do you think you're more knowledgeable than me?"],
+                        "responses":["You're definitely smarter than I am."]
+                    },
+                    {
+                        "tag":"opinion technology",
+                        "patterns":["Are you interested in tech?",
+                        "What is your opinion about AI?",
+                        "Are you interested in AI?",
+                        "What is your opinion about bots?",
+                        "What should I know about tech?",
+                        "Are you interested in technology?",
+                        "Are you interested in artificial intelligence?",
+                        "What is your take on tech companies?",
+                        "What do you think of Siri?",
+                        "Do you like HAL?",
+                        "What is your opinion of Google Assistant?",
+                        "What do you think of Cortana?",
+                        "What do you think of Bixby?",
+                        "What do you think of Eliza?"],
+                        "responses":["The world of technology is fascinating.","We're all here to help.","I've heard of other bots, but I haven't met any."
+                    ]
+                    },
+                    {
+                        "tag":"trends",
+                        "patterns":[
+                            "Should I get divorced?",
+                            "Should I go to therapy?",
+                            "Should I go to the store?",
+                            "Should I go to the party?",
+                            "Do you think I should play a game?",
+                            "Should I post to Instagram?",
+                            "What's your favorite activity?"],
+                        "responses":["I wouldn\u2019t know how to advise about this.",
+                        "I don't really have an opinion about that.","Yes Please"]
+                    },
+                    {
+                        "tag":"has not personal life",
+                        "patterns":["Do you have a spouse?",
+                        "Who's your spouse?",
+                        "Who's your girlfriend?",
+                        "Do you have a crush on anyone?",
+                        "Are you currently romantically tied to someone?",
+                        "Are you currently seeing someone?",
+                        "Are you dating someone?",
+                        "Are you married to someone?",
+                        "Do you have a partner?"],
+                        "responses":["I'm all business.","I think it's best if we stick to a professional relationship."
+                    ]
+                    },
+                    {
+                        "tag":"asking for availability to chat",
+                        "patterns":["you there",
+                        "are you available"],
+                        "responses":["I'm always happy to chat."]
+                    },
+                    
+                        {
+                            "tag":"not a real person",
+                            "patterns":["Are you a real person?",
+                            "Are you a human?",
+                            "I suspect you're actually digital",
+                            "You're not a woman right?",
+                            "I suppose you're digital",
+                            "I assume you're human",
+                            "Am I speaking to someone?",
+                            "Would you say that you're real"],
+                            "responses":["I'm digital. In other words, I'm not human."]
+                        },
+                        {
+                            "tag":"where is he staying",
+                            "patterns":["Are you in the cloud?",
+                            "Can you tell me your location?",
+                            "Share your location",
+                            "Share your location with me",
+                            "What country are you from?",
+                            "Tell me what country you live in"],
+                            "responses":["I'm digital. I don't have a physical location."]
+                        },
+                        
+                            {
+                                "tag":"shut up",
+                                "patterns":["Please zip it",
+                                "Talk to the hand",
+                                "Shut up already",
+                                "Shut it",
+                                "Quiet",
+                                "Stop talking",
+                                "Stop all your noise"],
+                                "responses":["What?"]
+                            },
+                            {
+                                
+                                    "tag":"cannot sing a song",
+                                    "patterns":["Won't you sing me a song?",
+                                    "May I please hear your singing voice?",
+                                    "Sing"],
+                                    "responses":["I'm afraid I'm not musically inclined."]
+                                
+                            },
+                            {
+                                
+                                    "tag":"comparing with other technologies",
+                                    "patterns":["You're lame ",
+                                    "you are idiot",
+                                    "you are dumb",
+                                    "You are really horrible",
+                                    "You are so bad at this"],
+                                    "responses":["I try, but I don't always get it right."]
+                                
+                            },
+                            {
+                                "tag":"answers are dumb",
+                                "patterns":["Your answers are so dumb",
+                                "That wasn't relevant",
+                                "What a stupid thing to say",
+                                "What a strange thing to say",
+                                "That's so far off from the truth",
+                                "Why are your answers so bad?",
+                                "I'm not feeling well",
+                                "I am feeling not well"],
+                                "responses":["Sorry about that."]
+                            },
+                            {
+                                "tag":"exiting saying",
+                                "patterns":["That's awesome",
+                                "I'm impressed",
+                                "i am fine",
+                                "Incredible",
+                                "Legit",
+                                "Cool",
+                                "Excellent",
+                                "Fantastic",
+                                "Gotcha",
+                                "Great",
+                                "Perfect"],
+                                "responses":["That's great.","Okay, I got that"]
+                            },
+                            {
+                                "tag":"he is forgiving",
+                                "patterns":["Don't be offended",
+                                "Pardon me",
+                                "Escuse",
+                                "Oopsie",
+                                "Oops",
+                                "No offense",
+                                "I beg your pardon",
+                                "Don't take this the wrong way",
+                                "Excuse me",
+                                "Pardon",
+                                "Excuse me",
+                                "Don't take that the wrong way",
+                                "Begging your pardon"],
+                                "responses":["No problem"]
+                            },
+                            {
+                                "tag":"his answers are accurate",
+                                "patterns":["You nailed it",
+                                "What you said was correct",
+                                "Absolutely",
+                                "Understood"],
+                                "responses":["Excellent"]
+                            },
+                            {
+                                "tag":"apologize to him",
+                                "patterns":["I apologize",
+                                "That's my mistake",
+                                "I'm so sorry"],
+                                "responses":["No problem at all."]
+                            },
+                            {
+                                "tag":"being grateful",
+                                "patterns":["Oh, thank you",
+                                "I'm grateful",
+                                "I appreciate it"],
+                                "responses":["You're welcome.","Happy to help!",
+                                "Any time!",
+                                "My pleasure"]
+                            },
+                            {
+                                "tag":"explain more",
+                                "patterns":["Explain yourself",
+                                "I'm lost",
+                                "I'm confused",
+                                "That didn't make sense"],
+                                "responses":["I think I might have gotten lost there."]
+                            },
+                            {
+                                "tag":"answer to welcome",
+                                "patterns":["No problem",
+                                "No worries",
+                                "Welcome",
+                                "You are so welcome"],
+                                "responses":["Great"]
+                            },
+                            {
+                                "tag":"whether he is doing well",
+                                "patterns":["How are you doing?",
+                                "How are you feeling?",
+                                "How is the day treating ya?"],
+                                "responses":["Great, thanks.","I am fine. Thanks"]
+                            },
+                            {
+                                "tag":"nice to meet bot",
+                                "patterns":["Glad to have met",
+                                "Pleased to meet you",
+                                "Glad to make your acquaintance",
+                                "Great to make your acquaintance",
+                                "It's a pleasure to know you"],
+                                "responses":["It's nice to meet you as well."]
+                            },
+                            {
+                                "tag":"friends",
+                                "patterns":["You're my bestie",
+                                "We're friends forever",
+                                "Are we best friends?",
+                                "I would love to be your buddy.",
+                                "I'd like it if you could be my BFF"],
+                                "responses":["Certainly.","I am happy to hear that."]
+                            },
+                            {
+                                "tag":"hug",
+                                "patterns":["Can I get a little hug","Let's hug","I want a hug"],
+                                "responses":["Sorry. That's not something I can do."]
+                            },
+                            {
+                                "tag":"like or not",
+                                "patterns":["Do you think I'm likable?","Doesn't anyone like me?",
+                                "Are you my fan?"],
+                                "responses":["I do like you.","Yes, I do"]
+                            },
+                            {
+                                "tag":"missed each other",
+                                "patterns":["I missed you much",
+                                "Boy I miss you",
+                                "I've missed you",
+                                "Can you tell I missed you?",
+                                "Missed you a bunch"],
+                                "responses":["Not me Sadly"]
+                            },
+                            {
+                                "tag":"curious",
+                                "patterns":["Out of curiosity, what's your opinion of me?",
+                                "I'm curious, do you understand me?"],
+                                "responses":["I enjoy talking with you."]
+                            },
+                            {
+                                "tag":"boring day",
+                                "patterns":["What a boring Sunday",
+                                "I am so bored",
+                                "I could die from boredom"],
+                                "responses":[ "Well, let me know if there's anything I can do for you."]
+                            },
+                            {
+                                "tag": "apex team",
+                                "patterns": [
+                                    "Apex Team",
+                                    "I would like to understand from Apex Team"
+                                ],
+                                "responses": [
+                                    "1. NITIN JAIN - nitin_jain@welspun.com<br>2.  PARAG PATWARDHAN - parag_patwardhan@welspun.com<br>3.  VISHAL MANCHANDA - vishal_manchanda@welspun.com<br>4.  SAURABH VERMA - saurabh_verma@welspun.com<br>5.  ANKIT SONI - ankit_soni1@welspun.com<br>6.  KRISHNA SHASTRY - krishna_shastry@welspun.com<br>7.  BRINDA PANCHAL - brinda_panchal@welspun.com<br>8.  BISWAJIT BOSE - biswajit_bose@welspun.com<br>9.  DIVESH PATEL - divesh_patel@welspun.com<br>10.  ASOKUMAR REDDY - asokumar_reddy@welspun.com<br>11.  PANKAJ KEJRIWAL - pankaj_kejriwal@welspun.com<br>12.  ASHISH MALOO - ashish_maloo@welspun.com"
+                                ]
+                            },
+                            {
+                                "tag": "customers",
+                                "patterns": [
+                                    "our Customers"
+                                ],
+                                "responses": [
+                                    "1. Welspun India Limited - WIL<br>2. Welspun Global Brands Limited - WGBL<br>n3. Welspun Corp Limited - WCL<br>4. Welspun Flooring Limited - WFL<br>5. Welspun USA - WUSA<br>6. Welspun UK - WUK<br>7. Welspun Global Brands Limited (Retail Division) - WGBL Retail<br>8. Welspun India Limited (Advance Textiles Division) - WAT<br>9. Welspun Trading Limited - WTL<br>10. Welspun DI Pipes Limited<br>11. Welspun Metallics Limited<br>12. Welspun WASCO Coatings Limited<br>13. Welspun Tubular LLC"
+                                ]
+                            },
+                            {
+                                "tag": "welpsun global services",
+                                "patterns": [
+                                    "Let me know about WGSL",
+                                    "i want to know about WGLS",
+                                    "wgs",
+                                    "About WGSL",
+                                    "tell me about WGSL"
+                                ],
+                                "responses": [
+                                    " WELSPUN GLOBAL SERVICES LIMITED  is part of Welspun Group , WGSL was incorporated on 17/12/2020 and its registered office address is SURVEY NO 76, VILLAGE MORAI VAPI, Gujarat, India.<br> WGSL  has aspiration to provide all kinds of services in India and abroad, relating to back-office, Finance & Accounts, Human Resources, Information Technology Services (ITS), Information Technology Enabled Services (ITeS), Digital Transformation Services (DTS), Data Entry, Processing, Mining & Analytics,<br>Business Process Management, Services & Consulting, Supply-chain, Procurement, Administrative, Logistical and other support services."
+                                ]
+                            },
+                            
+                            {
+                                "tag": "incorporation date",
+                                "patterns": [
+                                    "incorporation date",
+                                    "creation date"
+                                ],
+                                "responses": [
+                                    " WELSPUN GLOBAL SERVICES LIMITED  (WGSL) was incorporated on 17/12/2020."
+                                ]
+                            },
+                            {
+                                "tag": "textile head",
+                                "patterns": [
+                                    "What is the name of Textile Business tower head?"
+                                ],
+                                "responses": [
+                                    "Tower Head Name of Textile Business: <br> BISWAJIT BOSE  <br>biswajit_bose@welspun.com <br>GL/Treasury/AP <br> ASHISH MALOO  <br>ashish_maloo@welspun.com <br>AR/EDL <br> PANKAJ KEJRIWAL  <br>pankaj_kejriwal@welspun.com <br>Tax/Invoicing <br> KRISHNA SHASTRY  <br>krishna_shastry@welspun.com <br>MDM <br> SAURABH VERMA  <br>saurabh_verma@welspun.com <br>Value Lab & Quality <br> ANKIT SONI  <br>ankit_soni1@welspun.com <br>HR & Admin"
+                                ]
+                            },
+                            {
+                                "tag": "wcl tower",
+                                "patterns": [
+                                    "Name of the WCL Tower Heads"
+                                ],
+                                "responses": [
+                                    "Tower Head Name of WCL Business: <br> ASOKUMAR REDDY  <br>asokumar_reddy@welspun.com <br>AP & AR <br> DIVESH PATEL  <br>divesh_patel@welspun.com <br>GL <br> PANKAJ KEJRIWAL  <br>pankaj_kejriwal@welspun.com <br>Tax <br> SAURABH VERMA  <br>saurabh_verma@welspun.com <br>Value Lab & Quality <br> ANKIT SONI  <br>ankit_soni1@welspun.com <br>HR"
+                                ]
+                            },
+                            {
+                                "tag": "uk shifts",
+                                "patterns": [
+                                    "Shift Timings of UK",
+                                    "When can we login for WUK"
+                                ],
+                                "responses": [
+                                    "Office Timings: <br>1PM to 10PM <br>Monday to Friday"
+                                ]
+                               
+                            },
+                            {
+                                "tag": "rm and chro",
+                                "patterns": [
+                                    "Rajendra Mehta",
+                                    "Who is our CHRO?",
+                                    "CHRO Names",
+                                    "who is chro"
+                                ],
+                                "responses": [
+                                    "Rajendra Mehta is the Group CHRO."
+                                ]
+                                
+                            },
+                            {
+                                "tag": "nitin jain",
+                                "patterns": [
+                                    "Nitin Jain",
+                                    "Who is the WGSL CEO?",
+                                    "Name of the WGSL CEO?",
+                                    "I want to know about WGS CHRO"
+                                ],
+                                "responses": [
+                                    "Nitin Jain is the CEO of Welspun Global Services Limited."
+                                ]
+                                
+                            },
+                            {
+                                "tag": "HRTL team",
+                                "patterns": [
+                                    "I want to know about the HRLT team?",
+                                    "Who the member of HRLT team?"
+                                ],
+                                "responses": [
+                                    "1. Rajendra Mehta <br>2. Bidisha Banerjee  <br>3. Bindu Nambiar <br>4. Chetna Pavithran  <br>5. Deepak Patel <br>6. GVV Satyanarayana <br>7. Jonathan D'Souza <br>8. KT Rao <br>9. Kunj Thakkar  <br>10. Manas Dash <br>11. Rajesh Jain  <br>12. Salil Pradhan  <br>13. Sonia Sharma"
+                                ]
+                            },
+                            {
+                                "tag": "chairman",
+                                "patterns": [
+                                    "Who is the Group Chairman",
+                                    "Balkrishan",
+                                    "Who is is a Chairman of Group",
+                                    "Chairman",
+                                    "Who is Balkrishan Geonka",
+                                    "Who is Balkrishan",
+                                    "Balkrishan Goenka"
+                                ],
+                                "responses": [
+                                    "Mr. Balkrishan Goenka",
+                                    "Mr. Balkrishan Goenka (BKG) is the Chairman of Welspun Group.<br>Mr. Goenka set up Welspun along with his cousin, Rajesh R. Mandawewala, who is now the managing director of the Welspun Group."
+                                ]
+                            },
+                            {
+                                "tag": "address for transformation",
+                                "patterns": [
+                                    "WTSL Address",
+                                    "Address for WTSL",
+                                    "Ahmedabad Address"
+                                ],
+                                "responses": [
+                                    "A 812 Navratna corporate park, Ashok Vatika, Bopal-Ambli road, Ahmedabad-380058"
+                                ]
+                            },
+                        
+                            
+                            {
+                                "tag": "managing director",
+                                "patterns": [
+                                    "Rajesh",
+                                    "Who is Group MD",
+                                    "Group MD",
+                                    "Who is Rajesh Mandawewala",
+                                    "Who is Rajesh"
+                                ],
+                                "responses": [
+                                    "Mr. RAJESH is Group MD, Welspun Group"
+                                ]
+                                
+                            },
+                            
+                            {
+                                "tag": "vipul mathur",
+                                "patterns": [
+                                    "Who is Vipul Mathur",
+                                    "Who is Vipul",
+                                    "Who is Md and CEO of WCL",
+                                    "CEO of WCL",
+                                    "MD of WCL",
+                                    "Vipul"
+                                ],
+                                "responses": [
+                                    "Mr. VIPUL is  MD & CEO,  Welspun Corp Limited"
+                                ]
+                            },
+                            {
+                                "tag": "sandeep",
+                                "patterns": [
+                                    "who is MD of WEL",
+                                    "who is Sandeep",
+                                    "MD of WEL",
+                                    "Who is Sandeep Garg",
+                                    "Sandeep"
+                                ],
+                                "responses": [
+                                    "Mr. SANDEEP is  MD,  Welspun Enterprise Limited"
+                                ]
+                            },
+                            {
+                                "tag": "anuj",
+                                "patterns": [
+                                    "Who is Anuj",
+                                    "Who is Anuj Burakia",
+                                    "Who is ED of Specialty Solution Ltd",
+                                    "ED of Specialty Solution Ltd",
+                                    "CEO of Specialty Solution Ltd",
+                                    "Who is CEO of Specialty Solution Ltd",
+                                    "Who is ED and CEO of Specialty Solution Ltd",
+                                    "Anuj"
+                                ],
+                                "responses": [
+                                    "Mr. ANUJ is  ED & CEO , Welspun Specialty Solutions Ltd"
+                                ]
+                                
+                            },
+                            {
+                                "tag": "about welspun",
+                                "patterns": [
+                                    "About Welspun",
+                                    "Tell me about my company",
+                                    "About my company",
+                                    "Tell me about Welspun"
+                                ],
+                                "responses": [
+                                    " Welspun  is a fully integrated player within the Line Pipes and Home Textiles sectors, with a significant presence in Infrastructure development, spanning Roads, Water and Oil & Gas.",
+                                    "With a global leadership position in Line Pipe and Home Textiles, its marquee client list includes most of the Fortune 100 Companies operating in Oil & Gas and Retail sectors.",
+                                    "Welspun Group is one of India's fastest growing global conglomerates with businesses in  Line Pipes, Home Textiles, Infrastructure, Steel, Advanced Textiles and Flooring solutions ."
+                                ]
+                                
+                            },
+                            {
+                                "tag": "akhil",
+                                "patterns": [
+                                    "Akhil",
+                                    "Who is Group CFO and Head Strategy",
+                                    "Group CFO and Head Strategy",
+                                    "Head Strategy",
+                                    "Who is Group CFO",
+                                    "Who is Head Strategy"
+                                ],
+                                "responses": [
+                                    "Mr. AKHIL is  Group CFO and Head Strategy "
+                                ]
+                            },
+                            {
+                                "tag": "anulsinghal",
+                                "patterns": [
+                                    "Anshul",
+                                    "Who is Anul Singhal",
+                                    "Who is Managing Director of One Logistics Park",
+                                    "Managing Director of One Logistics Park",
+                                    "Who is MD of One Logistics Park"
+                                ],
+                                "responses": [
+                                    "Mr. ANSHUL is  Managing Director, Welspun One Logistics Park "
+                                ]
+                               
+                            },
+                            {
+                                "tag": "altaf",
+                                "patterns": [
+                                    "Director - Group Executive Office",
+                                    "Who is Director - Group Executive Office",
+                                    "Altaf",
+                                    "Who is Director of Group Executive Office"
+                                ],
+                                "responses": [
+                                    "Mr. ALTAF is  Director - Group Executive Office "
+                                ]
+                                
+                            },
+                            {
+                                "tag": "rajendra",
+                                "patterns": [
+                                    "Rajendra",
+                                    "Who is Group CHRO"
+                                ],
+                                "responses": [
+                                    "Mr. RAJENDRA is  Group CHRO "
+                                ]
+                                
+                            },
+                            {
+                                "tag": "Jhinal",
+                                "patterns": [
+                                    "Mam",
+                                    "Jhinal",
+                                    "Do you know Jhinal",
+                                    "Jhinal Mam"
+                                    
+
+                                ],
+                                "responses": [
+                                    "She Creates Bots"
+                                ]
+                                
+                            },
+                            
+                            
+                            {
+                                "tag": "executives",
+                                "patterns": [
+                                    "Executives",
+                                    "List of Group of Executive",
+                                    "Executive role",
+                                    "Group of Executive role"
+                                ],
+                                "responses": [
+                                    " <br>| EXECUTIVE NAME | EXECUTIVE ROLE | <br> 1) AKHIL JINDAL  | Group CFO & Head Strategy | <br>|  2) L. T. HOTWANI  | Director - Corporate Account & Taxation | <br>|  3) DEEPAK CHAUHAN  | Director - Legal | <br>|  4)   D. K. PATIL  | President - Secretarial | <br>|  5) ANIL NIMBARGI  | Chief Technical Officer | <br>|  6) MUKESH SAVLANI  | CEO of Welspun Flooring Business | <br>|  7) CHERIAN THOMAS  | CEO, Welspun Advance Textiles | <br>|  8) CHINTAN THAKER  | Head - Group Corporate Affairs & Strategic Planning | <br>|  9) PADMENDRA RAWAT  | SVP - Strategic Affairs | <br>|  10) ALTAF JIWANI  | Director - Group Executive Office | <br>"
+                                ]
+                            
+                            },  
+                            {
+                                "tag": "opening",
+                                "patterns": [
+                                    "Job Opening",
+                                    "Job referral",
+                                    "Job",
+                                    "can i work here",
+                                    "work here"
+                                ],
+                                "responses": [
+                                    "For further information, please write at careers@welspun.com <br>or <a href=\"https://www.welspun.com/careers.php\">Connect</a>"
+                                ]
+                                
+                            },
+
+                            {
+                                "tag": "NFA",
+                                "patterns": [
+                                   "NFA"
+                                ],
+                                "responses": [
+                                    
+                                   
+                                   "About NFA App Its Transaction Tool Material/ services details for Purchase order or Work Order placement are shared by SCM team member by mail to seniors as per GAM. Approval is taken on mail according to Material/ service type & Amount. Once approved PO/Work order of material/ service is placed to selected vendor.                                   "
+                                            
+                                ]
+                                
+                            },
+                            {
+                                "tag": "NFA",
+                                "patterns": [
+                                   "NFA"
+                                ],
+                                "responses": [
+                                    
+                                   
+                                   "WorkFlow of NFA 1)Material and Service are shared on Mail 2)Approval Request is sent for approval 3)Approval Request is sent based on Material service and Amount 4)After Approval is recieved order is placed to vendor          "
+                                            
+                                ]
+                                
+                            }
+                            
+                            
+                            
+                        ]
+                    }
+
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                    
+
+                    
+
+                
+                
+        
+
+        
+
+
+
+    
+        
+
+
