@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">   <img src="{% static 'images/Welspun.jpg' %}" width="110" height="50"></a>
+
+        <nav class="navbar">
+            {% if user.is_authenticated %}
+            <a href="#">Welcome {{ user.username }}</a>
+            {% else %}
+            <a href="accounts/login">Log in</a>
+            <a href="accounts/register">Sign up</a>
+            {% endif %}
+
+        </nav>
+        
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi i am Lakshay Baijal</h1>
+            <h3>NFA Application</h3>
+            <p>Its Transaction Application.
+                <br>
+                •	Material/ services details for Purchase order or Work Order placement are shared by SCM team member by mail to seniors as per GAM.
+                <br>
+                •	Approval is taken on mail according to Material/ service type & Amount.
+                <br>
+                •	Once approved PO/Work order of material/ service is placed to selected vendor.
+            </p>
+            {% if user.is_authenticated %}
+            <div class="btn-box">
+                <a href="{% url 'index' %}">Get Started</a>
+            </div>
+            {% else %}
+            <div class="btn-box">
+                <a href="accounts/login">Log in</a>
+                <a href="accounts/register">Sign up</a>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-twitch' ></i></a>
+        </div> -->
+
+        <span class="home-imgHover"></span>
+    </section>
+
+
+    <script type ="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"3740c33afd591f424ef322592bb8efac7","popupWidget":true,"automaticChatOpenOnNavigation":true,"oneTimeRating": false
+        ,"onInit": function() {
+            Kommunicate.customizeWidgetCss("div#mck-agent-status-text { display: none !important; } span.mck-agent-status-indicator { display: none !important }");
+        }};
+        kommunicateSettings.restartConversationByUser = true;
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    </script>
+        
+
+</body>
+</html>

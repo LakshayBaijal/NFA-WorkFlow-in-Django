@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style.css')}}">
+    <!-- <link rel="stylesheet" href="static/Style.css"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox_support">
+                <div class="chatbox_header">
+                    <div class="chatbox_image-header">
+                     </div>
+                <div class="chatbox_content-header">
+                    <h4 class="chatbox_heading-header">LB</h4>
+                    <p class="chatbox_description-header">LB</p>
+                </div>
+                </div>
+                <div class="chatbox_messages">
+                    <div></div>
+                </div>
+                <div class="chatbot_feedback">
+                    <i class='bx bx-star' > <div><input type="select" > Rate this conversation </i>
+                    </div>
+                </div>
+                <div class="chatbox_footer">
+                    <input type="text" placeholder="Enter Message Here">
+                    <button class="chatbox_send-footer send_button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox_button">
+                <button><img src="{{ url_for('static',filename='images/chat visible.png') }}" width="40" height="40"></button>
+            </div>
+        </div>
+    </div>
+    <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='App.js') }}"></script>
+</body>
+</html>
