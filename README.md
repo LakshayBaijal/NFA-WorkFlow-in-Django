@@ -12,3 +12,5 @@ Automated Mail Hierarchy and Excel Request Exportation through Power Automate Fl
 
 
 I have removed my API Key of Kommunicate hence chatbot wont work
+
+https://github.com/LakshayBaijal/NFA-WorkFlow-in-Django/blob/main/Images/Chat%20Bot.png
