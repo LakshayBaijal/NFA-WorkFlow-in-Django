@@ -21,3 +21,6 @@ Screenshots of my project
 
 Workflow
 ![image](https://github.com/user-attachments/assets/556a5f06-eb03-42b1-9915-46cfc45aab44)
+
+Keywords- 
+tutorial, from-scratch, how-to, example, demo, install, run, dataset, colab, c++, linux, system-calls, object-detection, opencv
